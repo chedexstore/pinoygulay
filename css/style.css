@@ -1,0 +1,250 @@
+:root {
+    --primary-green: #4CAF50; /* Aesthetic, soft green */
+    --primary-green-dark: #388E3C; /* Slightly darker for hover */
+    --white: #ffffff;
+    --black: #000000;
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.tagline {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--white);
+}
+
+nav {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--black);
+}
+
+#search-form {
+    margin-top: 2rem;
+}
+
+#search-input {
+    padding: 0.7rem;
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid var(--primary-green);
+    border-radius: var(--border-radius);
+}
+
+.cta-button {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-green-dark);
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.recipe-card {
+    background-color: var(--white);
+    border: 1px solid var(--primary-green);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+.recipe-content {
+    padding: 1.5rem;
+}
+
+.recipe-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.recipe-description {
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.recipe-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--black);
+}
+
+.ad-container {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: var(--primary-green);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.newsletter {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    padding: 0.8rem;
+    border-radius: var(--border-radius);
+    border: none;
+    flex: 1;
+    min-width: 200px;
+}
+
+.newsletter-form button {
+    background-color: var(--white);
+    color: var(--primary-green);
+    padding: 0.8rem 1.2rem;
+    border: 2px solid var(--primary-green);
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--primary-green);
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: var(--black);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: var(--primary-green);
+}
+
+.social-share a {
+    color: var(--black);
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.social-share a:hover {
+    color: var(--primary-green);
+}

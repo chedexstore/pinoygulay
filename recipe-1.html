@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinakbet Recipe | PinoyGulay</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta property="og:title" content="Pinakbet Recipe | PinoyGulay">
+    <meta property="og:description" content="Classic Ilocano vegetable stew with bitter melon, eggplant, squash, and shrimp paste.">
+    <meta property="og:image" content="https://example.com/images/pinakbet.jpg">
+    <meta property="og:url" content="https://example.com/recipe-1.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Optional: Add icons (font awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .share-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .share-buttons button {
+            margin: 5px;
+            padding: 8px 12px;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+        .share-buttons i {
+            font-size: 16px; /* smaller icon size */
+        }
+        .like-share-header {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">PinoyGulay</div>
+        <div class="tagline">30 Days of Healthy Filipino Vegetable Recipes</div>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+    
+    <main>
+        <div class="recipe-header">
+            <h1>Pinakbet</h1>
+            <img src="images/pinakbet.jpg" alt="Pinakbet">
+            <p>Day 1 of 30: Classic Ilocano vegetable stew with bitter melon, eggplant, squash, and shrimp paste.</p>
+        </div>
+        
+        <div class="recipe-content">
+            <div class="recipe-section">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 small bitter melon (ampalaya), sliced</li>
+                    <li>1 medium eggplant, sliced</li>
+                    <li>1 cup squash, cubed</li>
+                    <li>10 pieces okra</li>
+                    <li>1 cup string beans, cut into 2-inch pieces</li>
+                    <li>1 onion, chopped</li>
+                    <li>3 cloves garlic, minced</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>2 tbsp shrimp paste (bagoong)</li>
+                    <li>1 cup water</li>
+                    <li>2 tbsp cooking oil</li>
+                </ul>
+            </div>
+            
+            <div class="recipe-section">
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Heat oil in a pot over medium heat.</li>
+                    <li>Sauté garlic, onion, and tomatoes until softened.</li>
+                    <li>Add shrimp paste and stir for 1 minute.</li>
+                    <li>Add squash and water. Simmer for 5 minutes.</li>
+                    <li>Add the rest of the vegetables starting with the ones that take longer to cook (bitter melon, string beans, okra, then eggplant).</li>
+                    <li>Cover and simmer for 15-20 minutes until vegetables are tender.</li>
+                    <li>Serve hot with rice.</li>
+                </ol>
+            </div>
+            
+            <div class="recipe-section nutritional-info">
+                <h2>Nutritional Information</h2>
+                <dl>
+                    <dt>Calories</dt>
+                    <dd>180</dd>
+                    <dt>Protein</dt>
+                    <dd>5g</dd>
+                    <dt>Carbohydrates</dt>
+                    <dd>25g</dd>
+                    <dt>Fat</dt>
+                    <dd>7g</dd>
+                    <dt>Fiber</dt>
+                    <dd>6g</dd>
+                </dl>
+            </div>
+
+            <!-- Share Section without Like and Copy URL -->
+            <div class="like-share-header">Share this Recipe!</div>
+            <div class="share-buttons">
+                <button class="facebook-share"><i class="fab fa-facebook"></i> Facebook</button>
+                <button class="twitter-share"><i class="fab fa-twitter"></i> Twitter</button>
+                <button class="pinterest-share"><i class="fab fa-pinterest"></i> Pinterest</button>
+                <button class="copy-url" onclick="copyURL()"><i class="fas fa-link"></i> Copy URL</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="contact">
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+        </div>
+        <p class="copyright">© 2025 PinoyGulay. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function copyURL() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                alert('URL copied to clipboard!');
+            }).catch((err) => {
+                alert('Failed to copy URL: ', err);
+            });
+        }
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - PinoyGulay</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PinoyGulay</div>
+        <div class="tagline">30 Days of Healthy Filipino Vegetable Recipes</div>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+       
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <main id="contact">
+        <section class="contact-section" style="text-align: center;">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, comments, or just want to say hello, feel free to reach out to us!</p>
+            <form action="submit-contact.php" method="POST">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
